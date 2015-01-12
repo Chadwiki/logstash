@@ -1,4 +1,4 @@
-# logstash v1.0
+# logstash
 1) Download, Config Logstash 1.4.2
 2) Add auto create index to ES Config (elasticsearch.yml)
           action.auto_create_index: logstash*
