@@ -1,133 +1,133 @@
-TIME		Time
-/lpc/nct6779d/control/0		Fan Control #1
-/lpc/nct6779d/control/1		Fan Control #2
-/lpc/nct6779d/control/2		Fan Control #3
-/lpc/nct6779d/control/3		Fan Control #4
-/lpc/nct6779d/control/4		Fan Control #5
-/lpc/nct6779d/voltage/0		CPU VCore
-/lpc/nct6779d/voltage/1		Voltage #2
-/lpc/nct6779d/voltage/2		AVCC
-/lpc/nct6779d/voltage/3		3VCC
-/lpc/nct6779d/voltage/4		Voltage #5
-/lpc/nct6779d/voltage/5		Voltage #6
-/lpc/nct6779d/voltage/6		Voltage #7
-/lpc/nct6779d/voltage/7		3VSB
-/lpc/nct6779d/voltage/8		VBAT
-/lpc/nct6779d/voltage/9		VTT
-/lpc/nct6779d/voltage/10		Voltage #11
-/lpc/nct6779d/voltage/11		Voltage #12
-/lpc/nct6779d/voltage/12		Voltage #13
-/lpc/nct6779d/voltage/13		Voltage #14
-/lpc/nct6779d/voltage/14		Voltage #15
-/lpc/nct6779d/temperature/1		Temperature #1
-/lpc/nct6779d/temperature/2		Temperature #2
-/lpc/nct6779d/temperature/3		Temperature #3
-/lpc/nct6779d/temperature/4		Temperature #4
-/lpc/nct6779d/temperature/5		Temperature #5
-/lpc/nct6779d/temperature/6		Temperature #6
-/intelcpu/0/load/1		CPU0 Core #1
-/intelcpu/0/load/2		CPU0 Core #2
-/intelcpu/0/load/3		CPU0 Core #3
-/intelcpu/0/load/4		CPU0 Core #4
-/intelcpu/0/load/5		CPU0 Core #5
-/intelcpu/0/load/6		CPU0 Core #6
-/intelcpu/0/load/7		CPU0 Core #7
-/intelcpu/0/load/8		CPU0 Core #8
-/intelcpu/0/load/9		CPU0 Core #9
-/intelcpu/0/load/10		CPU0 Core #10
-/intelcpu/0/load/0		CPU0 Total
-/intelcpu/0/temperature/0		CPU0 Core #1
-/intelcpu/0/temperature/1		CPU0 Core #2
-/intelcpu/0/temperature/2		CPU0 Core #3
-/intelcpu/0/temperature/3		CPU0 Core #4
-/intelcpu/0/temperature/4		CPU0 Core #5
-/intelcpu/0/temperature/5		CPU0 Core #6
-/intelcpu/0/temperature/6		CPU0 Core #7
-/intelcpu/0/temperature/7		CPU0 Core #8
-/intelcpu/0/temperature/8		CPU0 Core #9
-/intelcpu/0/temperature/9		CPU0 Core #10
-/intelcpu/0/temperature/10		CPU0 Package
-/intelcpu/0/clock/1		CPU1 Core #1
-/intelcpu/0/clock/2		CPU1 Core #2
-/intelcpu/0/clock/3		CPU1 Core #3
-/intelcpu/0/clock/4		CPU1 Core #4
-/intelcpu/0/clock/5		CPU1 Core #5
-/intelcpu/0/clock/6		CPU1 Core #6
-/intelcpu/0/clock/7		CPU1 Core #7
-/intelcpu/0/clock/8		CPU1 Core #8
-/intelcpu/0/clock/9		CPU1 Core #9
-/intelcpu/0/clock/10		CPU1 Core #10
-/intelcpu/0/power/0		CPU1 Package
-/intelcpu/0/power/1		CPU1 Cores
-/intelcpu/0/power/3		CPU1 DRAM
-/intelcpu/0/clock/0		Bus Speed
-/intelcpu/1/load/1		CPU Core #1
-/intelcpu/1/load/2		CPU Core #2
-/intelcpu/1/load/3		CPU Core #3
-/intelcpu/1/load/4		CPU Core #4
-/intelcpu/1/load/5		CPU Core #5
-/intelcpu/1/load/6		CPU Core #6
-/intelcpu/1/load/7		CPU Core #7
-/intelcpu/1/load/8		CPU Core #8
-/intelcpu/1/load/9		CPU Core #9
-/intelcpu/1/load/10		CPU Core #10
-/intelcpu/1/load/0		CPU Total
-/intelcpu/1/temperature/0		CPU Core #1
-/intelcpu/1/temperature/1		CPU Core #2
-/intelcpu/1/temperature/2		CPU Core #3
-/intelcpu/1/temperature/3		CPU Core #4
-/intelcpu/1/temperature/4		CPU Core #5
-/intelcpu/1/temperature/5		CPU Core #6
-/intelcpu/1/temperature/6		CPU Core #7
-/intelcpu/1/temperature/7		CPU Core #8
-/intelcpu/1/temperature/8		CPU Core #9
-/intelcpu/1/temperature/9		CPU Core #10
-/intelcpu/1/temperature/10		CPU Package
-/intelcpu/1/clock/1		CPU Core #1
-/intelcpu/1/clock/2		CPU Core #2
-/intelcpu/1/clock/3		CPU Core #3
-/intelcpu/1/clock/4		CPU Core #4
-/intelcpu/1/clock/5		CPU Core #5
-/intelcpu/1/clock/6		CPU Core #6
-/intelcpu/1/clock/7		CPU Core #7
-/intelcpu/1/clock/8		CPU Core #8
-/intelcpu/1/clock/9		CPU Core #9
-/intelcpu/1/clock/10		CPU Core #10
-/intelcpu/1/power/0		CPU Package
-/intelcpu/1/power/1		CPU Cores
-/intelcpu/1/power/3		CPU DRAM
-/intelcpu/1/clock/0		Bus Speed
-/ram/load/0		Memory
-/ram/data/0		Used Memory
-/ram/data/1		Available Memory
-/nvidiagpu/0/temperature/0		GPU Core
-/nvidiagpu/0/fan/0		GPU
-/nvidiagpu/0/clock/0		GPU Core
-/nvidiagpu/0/clock/1		GPU Memory
-/nvidiagpu/0/clock/2		GPU Shader
-/nvidiagpu/0/load/0		GPU Core
-/nvidiagpu/0/load/1		GPU Memory Controller
-/nvidiagpu/0/load/2		GPU Video Engine
-/nvidiagpu/0/control/0		GPU Fan
-/nvidiagpu/0/load/3		GPU Memory
-/nvidiagpu/1/temperature/0		GPU Core
-/nvidiagpu/1/fan/0		GPU
-/nvidiagpu/1/clock/0		GPU Core
-/nvidiagpu/1/clock/1		GPU Memory
-/nvidiagpu/1/clock/2		GPU Shader
-/nvidiagpu/1/load/0		GPU Core
-/nvidiagpu/1/load/1		GPU Memory Controller
-/nvidiagpu/1/load/2		GPU Video Engine
-/nvidiagpu/1/control/0		GPU Fan
-/nvidiagpu/1/load/3		GPU Memory
-/hdd/0/load/0		Used Space
-/hdd/1/temperature/0		Temperature
-/hdd/1/level/0		Remaining Life
-/hdd/1/data/1		Host Writes to Controller
-/hdd/1/data/2		Host Reads
-/hdd/1/load/0		Used Space
-/hdd/2/temperature/0		Temperature
-/hdd/2/level/0		Remaining Life
-/hdd/2/data/1		Host Writes to Controller
-/hdd/2/data/2		Host Reads
-/hdd/2/load/0		Used Space
+Time,Time
+  /lpc/nct6779d/control/0,Fan Control #1
+/lpc/nct6779d/control/1,Fan Control #2
+  /lpc/nct6779d/control/2,Fan Control #3
+  /lpc/nct6779d/control/3,Fan Control #4
+  /lpc/nct6779d/control/4,Fan Control #5
+  /lpc/nct6779d/voltage/0,CPU VCore
+  /lpc/nct6779d/voltage/1,Voltage #2
+  /lpc/nct6779d/voltage/2,AVCC
+  /lpc/nct6779d/voltage/3,3VCC
+  /lpc/nct6779d/voltage/4,Voltage #5
+  /lpc/nct6779d/voltage/5,Voltage #6
+  /lpc/nct6779d/voltage/6,Voltage #7
+  /lpc/nct6779d/voltage/7,3VSB
+  /lpc/nct6779d/voltage/8,VBAT
+  /lpc/nct6779d/voltage/9,VTT
+  /lpc/nct6779d/voltage/10,Voltage #11
+  /lpc/nct6779d/voltage/11,Voltage #12
+  /lpc/nct6779d/voltage/12,Voltage #13
+  /lpc/nct6779d/voltage/13,Voltage #14
+  /lpc/nct6779d/voltage/14,Voltage #15
+  /lpc/nct6779d/temperature/1,Temperature #1
+  /lpc/nct6779d/temperature/2,Temperature #2
+  /lpc/nct6779d/temperature/3,Temperature #3
+  /lpc/nct6779d/temperature/4,Temperature #4
+  /lpc/nct6779d/temperature/5,Temperature #5
+  /lpc/nct6779d/temperature/6,Temperature #6
+  /intelcpu/0/load/1,CPU Core #1
+  /intelcpu/0/load/2,CPU Core #2
+  /intelcpu/0/load/3,CPU Core #3
+  /intelcpu/0/load/4,CPU Core #4
+  /intelcpu/0/load/5,CPU Core #5
+  /intelcpu/0/load/6,CPU Core #6
+  /intelcpu/0/load/7,CPU Core #7
+  /intelcpu/0/load/8,CPU Core #8
+  /intelcpu/0/load/9,CPU Core #9
+  /intelcpu/0/load/10,CPU Core #10
+  /intelcpu/0/load/0,CPU Total
+  /intelcpu/0/temperature/0,CPU Core #1
+  /intelcpu/0/temperature/1,CPU Core #2
+  /intelcpu/0/temperature/2,CPU Core #3
+  /intelcpu/0/temperature/3,CPU Core #4
+  /intelcpu/0/temperature/4,CPU Core #5
+  /intelcpu/0/temperature/5,CPU Core #6
+  /intelcpu/0/temperature/6,CPU Core #7
+  /intelcpu/0/temperature/7,CPU Core #8
+  /intelcpu/0/temperature/8,CPU Core #9
+  /intelcpu/0/temperature/9,CPU Core #10
+  /intelcpu/0/temperature/10,CPU Package
+  /intelcpu/0/clock/1,CPU Core #1
+  /intelcpu/0/clock/2,CPU Core #2
+  /intelcpu/0/clock/3,CPU Core #3
+  /intelcpu/0/clock/4,CPU Core #4
+  /intelcpu/0/clock/5,CPU Core #5
+  /intelcpu/0/clock/6,CPU Core #6
+  /intelcpu/0/clock/7,CPU Core #7
+  /intelcpu/0/clock/8,CPU Core #8
+  /intelcpu/0/clock/9,CPU Core #9
+  /intelcpu/0/clock/10,CPU Core #10
+  /intelcpu/0/power/0,CPU Package
+  /intelcpu/0/power/1,CPU Cores
+  /intelcpu/0/power/3,CPU DRAM
+  /intelcpu/0/clock/0,Bus Speed
+  /intelcpu/1/load/1,CPU Core #1
+  /intelcpu/1/load/2,CPU Core #2
+  /intelcpu/1/load/3,CPU Core #3
+  /intelcpu/1/load/4,CPU Core #4
+  /intelcpu/1/load/5,CPU Core #5
+  /intelcpu/1/load/6,CPU Core #6
+  /intelcpu/1/load/7,CPU Core #7
+  /intelcpu/1/load/8,CPU Core #8
+  /intelcpu/1/load/9,CPU Core #9
+  /intelcpu/1/load/10,CPU Core #10
+  /intelcpu/1/load/0,CPU Total
+  /intelcpu/1/temperature/0,CPU Core #1
+  /intelcpu/1/temperature/1,CPU Core #2
+  /intelcpu/1/temperature/2,CPU Core #3
+  /intelcpu/1/temperature/3,CPU Core #4
+  /intelcpu/1/temperature/4,CPU Core #5
+  /intelcpu/1/temperature/5,CPU Core #6
+  /intelcpu/1/temperature/6,CPU Core #7
+  /intelcpu/1/temperature/7,CPU Core #8
+  /intelcpu/1/temperature/8,CPU Core #9
+  /intelcpu/1/temperature/9,CPU Core #10
+  /intelcpu/1/temperature/10,CPU Package
+  /intelcpu/1/clock/1,CPU Core #1
+  /intelcpu/1/clock/2,CPU Core #2
+  /intelcpu/1/clock/3,CPU Core #3
+  /intelcpu/1/clock/4,CPU Core #4
+  /intelcpu/1/clock/5,CPU Core #5
+  /intelcpu/1/clock/6,CPU Core #6
+  /intelcpu/1/clock/7,CPU Core #7
+  /intelcpu/1/clock/8,CPU Core #8
+  /intelcpu/1/clock/9,CPU Core #9
+  /intelcpu/1/clock/10,CPU Core #10
+  /intelcpu/1/power/0,CPU Package
+  /intelcpu/1/power/1,CPU Cores
+  /intelcpu/1/power/3,CPU DRAM
+  /intelcpu/1/clock/0,Bus Speed
+  /ram/load/0,Memory
+  /ram/data/0,Used Memory
+  /ram/data/1,Available Memory
+  /nvidiagpu/0/temperature/0,GPU Core
+  /nvidiagpu/0/fan/0,GPU
+  /nvidiagpu/0/clock/0,GPU Core
+  /nvidiagpu/0/clock/1,GPU Memory
+  /nvidiagpu/0/clock/2,GPU Shader
+  /nvidiagpu/0/load/0,GPU Core
+  /nvidiagpu/0/load/1,GPU Memory Controller
+  /nvidiagpu/0/load/2,GPU Video Engine
+  /nvidiagpu/0/control/0,GPU Fan
+  /nvidiagpu/0/load/3,GPU Memory
+  /nvidiagpu/1/temperature/0,GPU Core
+  /nvidiagpu/1/fan/0,GPU
+  /nvidiagpu/1/clock/0,GPU Core
+  /nvidiagpu/1/clock/1,GPU Memory
+  /nvidiagpu/1/clock/2,GPU Shader
+  /nvidiagpu/1/load/0,GPU Core
+  /nvidiagpu/1/load/1,GPU Memory Controller
+  /nvidiagpu/1/load/2,GPU Video Engine
+  /nvidiagpu/1/control/0,GPU Fan
+  /nvidiagpu/1/load/3,GPU Memory
+  /hdd/0/load/0,Used Space
+  /hdd/1/temperature/0,Temperature
+  /hdd/1/level/0,Remaining Life
+  /hdd/1/data/1,Host Writes to Controller
+  /hdd/1/data/2,Host Reads
+  /hdd/1/load/0,Used Space
+  /hdd/2/temperature/0,Temperature
+  /hdd/2/level/0,Remaining Life
+  /hdd/2/data/1,Host Writes to Controller
+  /hdd/2/data/2,Host Reads
+  /hdd/2/load/0,Used Space
