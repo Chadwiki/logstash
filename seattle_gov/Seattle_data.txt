@@ -58,17 +58,10 @@ https://data.seattle.gov/api/views/ppi5-g2bj/rows.json?accessType=DOWNLOAD
   report_location_address text Report Location (address)
   report_location_state text Report Location (state)
   report_location_city text Report Location (city)
-  
-  # "id" : "hax4-439n",
-  # "name" : "Seattle Police 911 Calls",
-  # "logstash": seattle_911_police.conf
-  # https://data.seattle.gov/api/views/hax4-439n/rows.csv?accessType=DOWNLOAD
-  # This dataset is all the Police responses to 9-1-1 calls within the city. Police response data shows all officers dispatched. To protect the security of a scene, the safety of officers and the public, and sensitive ongoing investigation, these events are added to the data.seattle.gov only after the incident is considered safe to close out. Data is refreshed on a 4 hour interval.
-
 
 # "id" : "7ais-f98f"
 # "name" : "Seattle Police Department Police Report Incident"
-# "logstash": <NEEDS Created>
+# "logstash": seattle_911_police_report.conf
 # https://dev.socrata.com/foundry/data.seattle.gov/7ais-f98f
 # https://data.seattle.gov/api/views/7ais-f98f/rows.csv?accessType=DOWNLOAD
 # File: Seattle_Police_Department_Police_Report_Incident.csv
@@ -101,7 +94,7 @@ https://data.seattle.gov/api/views/ppi5-g2bj/rows.json?accessType=DOWNLOAD
 
 # "id" : "m2gk-mysw",  (List of codes)
 # "name" : "Seattle Police Department Police Report Offense",
-# "logstash":  <NEEDS Created>
+# "logstash":  <NEEDS Creation>
 # https://data.seattle.gov/api/views/m2gk-mysw/rows.csv?accessType=DOWNLOAD
 # File: Seattle_Police_Department_Police_Report_Incident.csv
 # as of 2017.07.27  Rows: 982K
@@ -116,6 +109,13 @@ https://data.seattle.gov/api/views/ppi5-g2bj/rows.json?accessType=DOWNLOAD
  summary_offense_code text Summary Offense Code Plain
  summary_crime_type text Summary Crime Type
 
+
+  # "id" : "hax4-439n",
+  # "name" : "Seattle Police 911 Calls",
+  # "logstash": seattle_911_police.conf
+  # https://data.seattle.gov/api/views/hax4-439n/rows.csv?accessType=DOWNLOAD
+  # File: Seattle_Police_911_Calls.csv
+  # This dataset is all the Police responses to 9-1-1 calls within the city. Police response data shows all officers dispatched. To protect the security of a scene, the safety of officers and the public, and sensitive ongoing investigation, these events are added to the data.seattle.gov only after the incident is considered safe to close out. Data is refreshed on a 4 hour interval.
 
 
 
