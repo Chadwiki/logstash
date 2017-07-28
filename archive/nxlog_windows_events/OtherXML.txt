@@ -1,0 +1,40 @@
+<patterndb>
+    <group>
+        <name>eventlog</name>
+        <id>1</id>
+        <pattern>
+            <id>1</id>
+            <name>dfs events</name>
+            <matchfield>
+                <name>FileName</name>
+                <type>string</type>
+                <value>DFS Replication</value>
+            </matchfield>
+            <matchfield>
+                <name>SourceName</name>
+                <type>string</type>
+                <value>DFSR</value>
+            </matchfield>
+            <matchfield>
+                <name>EventID</name>
+                <type>rege</type>
+                <value>(4202|4208|4302|4304|5004)</value>
+            </matchfield>
+            <exec>
+                drop();
+            </exec>
+        </pattern>
+        <pattern>
+            <id>2</id>
+            <name>Monitor</name>
+            <matchfield>
+                <name>Message</name>
+                <type>string</type>
+                <value>DEBUG</value>
+            </matchfield>
+            <exec>
+                drop();
+            </exec>
+        </pattern>
+    </group>
+</patterndb>

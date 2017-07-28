@@ -1,0 +1,2195 @@
+{
+  "template": "seattle_data-*",
+  "order": 100,
+  "settings": {
+    "index.mapping.total_fields.limit": 2000,
+    "index.refresh_interval": "5s",
+    "number_of_shards": 1,
+    "number_of_replicas": 0
+  },
+  "mappings": {
+    "doc": {
+      "properties": {
+        "@timestamp": {
+          "type": "date"
+        },
+        "@version": {
+          "type": "keyword"
+        },
+        "averageRating": {
+          "type": "long"
+        },
+        "blobFileSize": {
+          "type": "long"
+        },
+        "blobFilename": {
+          "type": "keyword"
+        },
+        "blobId": {
+          "type": "keyword"
+        },
+        "blobMimeType": {
+          "type": "keyword"
+        },
+        "category": {
+          "type": "keyword"
+        },
+        "createdAt": {
+          "type": "date",
+          "format": "epoch_second"
+        },
+        "description": {
+          "type": "keyword"
+        },
+        "disabledFeatureFlags": {
+          "type": "keyword"
+        },
+        "displayType": {
+          "type": "keyword"
+        },
+        "downloadCount": {
+          "type": "long"
+        },
+        "flags": {
+          "type": "keyword"
+        },
+        "hideFromCatalog": {
+          "type": "boolean"
+        },
+        "hideFromDataJson": {
+          "type": "boolean"
+        },
+        "http_poller_metadata": {
+          "properties": {
+            "code": {
+              "type": "long"
+            },
+            "host": {
+              "type": "keyword"
+            },
+            "name": {
+              "type": "keyword"
+            },
+            "request": {
+              "properties": {
+                "method": {
+                  "type": "keyword"
+                },
+                "url": {
+                  "type": "keyword"
+                }
+              }
+            },
+            "response_headers": {
+              "properties": {
+                "access-control-allow-origin": {
+                  "type": "keyword"
+                },
+                "age": {
+                  "type": "keyword"
+                },
+                "connection": {
+                  "type": "keyword"
+                },
+                "content-type": {
+                  "type": "keyword"
+                },
+                "server": {
+                  "type": "keyword"
+                },
+                "transfer-encoding": {
+                  "type": "keyword"
+                },
+                "x-socrata-region": {
+                  "type": "keyword"
+                },
+                "x-socrata-requestid": {
+                  "type": "keyword"
+                }
+              }
+            },
+            "response_message": {
+              "type": "keyword"
+            },
+            "runtime_seconds": {
+              "type": "half_float"
+            },
+            "times_retried": {
+              "type": "long"
+            }
+          }
+        },
+        "http_request_failure": {
+          "properties": {
+            "error": {
+              "type": "keyword"
+            },
+            "name": {
+              "type": "keyword"
+            },
+            "request": {
+              "properties": {
+                "method": {
+                  "type": "keyword"
+                },
+                "url": {
+                  "type": "keyword"
+                }
+              }
+            },
+            "runtime_seconds": {
+              "type": "half_float"
+            }
+          }
+        },
+        "iconUrl": {
+          "type": "keyword"
+        },
+        "id": {
+          "type": "keyword"
+        },
+        "indexUpdatedAt": {
+          "type": "date",
+          "format": "epoch_second"
+        },
+        "locale": {
+          "type": "keyword"
+        },
+        "metadata": {
+          "properties": {
+            "accessPoints": {
+              "properties": {
+                "story": {
+                  "type": "keyword"
+                }
+              }
+            },
+            "attachments": {
+              "properties": {
+                "assetId": {
+                  "type": "keyword"
+                },
+                "blobId": {
+                  "type": "keyword"
+                },
+                "filename": {
+                  "type": "keyword"
+                },
+                "name": {
+                  "type": "keyword"
+                }
+              }
+            },
+            "availableDisplayTypes": {
+              "type": "keyword"
+            },
+            "conditionalFormatting": {
+              "properties": {
+                "color": {
+                  "type": "keyword"
+                },
+                "condition": {
+                  "properties": {
+                    "_key": {
+                      "type": "keyword"
+                    },
+                    "children": {
+                      "properties": {
+                        "_key": {
+                          "type": "keyword"
+                        },
+                        "operator": {
+                          "type": "keyword"
+                        },
+                        "tableColumnId": {
+                          "type": "long"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    },
+                    "operator": {
+                      "type": "keyword"
+                    },
+                    "tableColumnId": {
+                      "type": "long"
+                    },
+                    "value": {
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "description": {
+                  "type": "keyword"
+                },
+                "icon": {
+                  "type": "keyword"
+                }
+              }
+            },
+            "custom_fields": {
+              "properties": {
+                "Basic": {
+                  "properties": {
+                    "Source": {
+                      "type": "keyword"
+                    },
+                    "Spatial Reference wkid": {
+                      "type": "keyword"
+                    },
+                    "canModifyLayer": {
+                      "type": "boolean"
+                    },
+                    "canScaleSymbols": {
+                      "type": "boolean"
+                    },
+                    "capabilities": {
+                      "type": "keyword"
+                    },
+                    "copyrightText": {
+                      "type": "keyword"
+                    },
+                    "currentVersion": {
+                      "type": "half_float"
+                    },
+                    "defaultVisibility": {
+                      "type": "boolean"
+                    },
+                    "definitionExpression": {
+                      "type": "keyword"
+                    },
+                    "displayField": {
+                      "type": "keyword"
+                    },
+                    "geometryType": {
+                      "type": "keyword"
+                    },
+                    "hasAttachments": {
+                      "type": "boolean"
+                    },
+                    "hasLabels": {
+                      "type": "boolean"
+                    },
+                    "hasM": {
+                      "type": "boolean"
+                    },
+                    "htmlPopupType": {
+                      "type": "keyword"
+                    },
+                    "id": {
+                      "type": "long"
+                    },
+                    "maxRecordCount": {
+                      "type": "long"
+                    },
+                    "maxScale": {
+                      "type": "long"
+                    },
+                    "minScale": {
+                      "type": "long"
+                    },
+                    "name": {
+                      "type": "keyword"
+                    },
+                    "supportedQueryFormats": {
+                      "type": "keyword"
+                    },
+                    "supportsAdvancedQueries": {
+                      "type": "boolean"
+                    },
+                    "supportsDatumTransformation": {
+                      "type": "boolean"
+                    },
+                    "supportsStatistics": {
+                      "type": "boolean"
+                    },
+                    "type": {
+                      "type": "keyword"
+                    },
+                    "useStandardizedQueries": {
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Data Owner": {
+                  "properties": {
+                    "Department": {
+                      "type": "keyword"
+                    },
+                    "Owner": {
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "Refresh Frequency": {
+                  "properties": {
+                    "Frequency": {
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "drawingInfo": {
+                  "properties": {
+                    "defaultLabel": {
+                      "type": "keyword"
+                    },
+                    "description": {
+                      "type": "keyword"
+                    },
+                    "field1": {
+                      "type": "keyword"
+                    },
+                    "fieldDelimiter": {
+                      "type": "keyword"
+                    },
+                    "label": {
+                      "type": "keyword"
+                    },
+                    "renderer": {
+                      "properties": {
+                        "defaultLabel": {
+                          "type": "keyword"
+                        },
+                        "field1": {
+                          "type": "keyword"
+                        },
+                        "fieldDelimiter": {
+                          "type": "keyword"
+                        },
+                        "type": {
+                          "type": "keyword"
+                        }
+                      }
+                    },
+                    "transparency": {
+                      "type": "keyword"
+                    },
+                    "type": {
+                      "type": "keyword"
+                    },
+                    "uniqueValueInfos_1": {
+                      "properties": {
+                        "description": {
+                          "type": "keyword"
+                        },
+                        "label": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    },
+                    "uniqueValueInfos_10": {
+                      "properties": {
+                        "description": {
+                          "type": "keyword"
+                        },
+                        "label": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    },
+                    "uniqueValueInfos_11": {
+                      "properties": {
+                        "description": {
+                          "type": "keyword"
+                        },
+                        "label": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    },
+                    "uniqueValueInfos_12": {
+                      "properties": {
+                        "description": {
+                          "type": "keyword"
+                        },
+                        "label": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    },
+                    "uniqueValueInfos_13": {
+                      "properties": {
+                        "description": {
+                          "type": "keyword"
+                        },
+                        "label": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    },
+                    "uniqueValueInfos_14": {
+                      "properties": {
+                        "description": {
+                          "type": "keyword"
+                        },
+                        "label": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    },
+                    "uniqueValueInfos_15": {
+                      "properties": {
+                        "description": {
+                          "type": "keyword"
+                        },
+                        "label": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    },
+                    "uniqueValueInfos_16": {
+                      "properties": {
+                        "description": {
+                          "type": "keyword"
+                        },
+                        "label": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    },
+                    "uniqueValueInfos_17": {
+                      "properties": {
+                        "description": {
+                          "type": "keyword"
+                        },
+                        "label": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    },
+                    "uniqueValueInfos_18": {
+                      "properties": {
+                        "description": {
+                          "type": "keyword"
+                        },
+                        "label": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    },
+                    "uniqueValueInfos_19": {
+                      "properties": {
+                        "description": {
+                          "type": "keyword"
+                        },
+                        "label": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    },
+                    "uniqueValueInfos_2": {
+                      "properties": {
+                        "description": {
+                          "type": "keyword"
+                        },
+                        "label": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    },
+                    "uniqueValueInfos_3": {
+                      "properties": {
+                        "description": {
+                          "type": "keyword"
+                        },
+                        "label": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    },
+                    "uniqueValueInfos_4": {
+                      "properties": {
+                        "description": {
+                          "type": "keyword"
+                        },
+                        "label": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    },
+                    "uniqueValueInfos_5": {
+                      "properties": {
+                        "description": {
+                          "type": "keyword"
+                        },
+                        "label": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    },
+                    "uniqueValueInfos_6": {
+                      "properties": {
+                        "description": {
+                          "type": "keyword"
+                        },
+                        "label": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    },
+                    "uniqueValueInfos_7": {
+                      "properties": {
+                        "description": {
+                          "type": "keyword"
+                        },
+                        "label": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    },
+                    "uniqueValueInfos_8": {
+                      "properties": {
+                        "description": {
+                          "type": "keyword"
+                        },
+                        "label": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    },
+                    "uniqueValueInfos_9": {
+                      "properties": {
+                        "description": {
+                          "type": "keyword"
+                        },
+                        "label": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    }
+                  }
+                },
+                "indexes_1": {
+                  "properties": {
+                    "description": {
+                      "type": "keyword"
+                    },
+                    "fields": {
+                      "type": "keyword"
+                    },
+                    "isAscending": {
+                      "type": "boolean"
+                    },
+                    "isUnique": {
+                      "type": "boolean"
+                    },
+                    "name": {
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "indexes_2": {
+                  "properties": {
+                    "description": {
+                      "type": "keyword"
+                    },
+                    "fields": {
+                      "type": "keyword"
+                    },
+                    "isAscending": {
+                      "type": "boolean"
+                    },
+                    "isUnique": {
+                      "type": "boolean"
+                    },
+                    "name": {
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "indexes_3": {
+                  "properties": {
+                    "description": {
+                      "type": "keyword"
+                    },
+                    "fields": {
+                      "type": "keyword"
+                    },
+                    "isAscending": {
+                      "type": "boolean"
+                    },
+                    "isUnique": {
+                      "type": "boolean"
+                    },
+                    "name": {
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "indexes_4": {
+                  "properties": {
+                    "description": {
+                      "type": "keyword"
+                    },
+                    "fields": {
+                      "type": "keyword"
+                    },
+                    "isAscending": {
+                      "type": "boolean"
+                    },
+                    "isUnique": {
+                      "type": "boolean"
+                    },
+                    "name": {
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "indexes_5": {
+                  "properties": {
+                    "description": {
+                      "type": "keyword"
+                    },
+                    "fields": {
+                      "type": "keyword"
+                    },
+                    "isAscending": {
+                      "type": "boolean"
+                    },
+                    "isUnique": {
+                      "type": "boolean"
+                    },
+                    "name": {
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "indexes_6": {
+                  "properties": {
+                    "description": {
+                      "type": "keyword"
+                    },
+                    "fields": {
+                      "type": "keyword"
+                    },
+                    "isAscending": {
+                      "type": "boolean"
+                    },
+                    "isUnique": {
+                      "type": "boolean"
+                    },
+                    "name": {
+                      "type": "keyword"
+                    }
+                  }
+                }
+              }
+            },
+            "filterCondition": {
+              "properties": {
+                "children": {
+                  "properties": {
+                    "metadata": {
+                      "properties": {
+                        "customValues": {
+                          "type": "date"
+                        },
+                        "operator": {
+                          "type": "keyword"
+                        },
+                        "tableColumnId": {
+                          "properties": {
+                            "218439": {
+                              "type": "long"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "type": {
+                      "type": "keyword"
+                    },
+                    "value": {
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "metadata": {
+                  "properties": {
+                    "advanced": {
+                      "type": "boolean"
+                    },
+                    "unifiedVersion": {
+                      "type": "long"
+                    }
+                  }
+                },
+                "type": {
+                  "type": "keyword"
+                },
+                "value": {
+                  "type": "keyword"
+                }
+              }
+            },
+            "initialized": {
+              "type": "boolean"
+            },
+            "jsonQuery": {
+              "properties": {
+                "group": {
+                  "properties": {
+                    "columnFieldName": {
+                      "type": "keyword"
+                    },
+                    "groupFunction": {
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "order": {
+                  "properties": {
+                    "ascending": {
+                      "type": "boolean"
+                    },
+                    "columnFieldName": {
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "search": {
+                  "type": "keyword"
+                },
+                "select": {
+                  "properties": {
+                    "aggregate": {
+                      "type": "keyword"
+                    },
+                    "columnFieldName": {
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "where": {
+                  "properties": {
+                    "children": {
+                      "properties": {
+                        "children": {
+                          "properties": {
+                            "children": {
+                              "properties": {
+                                "columnFieldName": {
+                                  "type": "keyword"
+                                },
+                                "metadata": {
+                                  "properties": {
+                                    "freeform": {
+                                      "type": "boolean"
+                                    }
+                                  }
+                                },
+                                "operator": {
+                                  "type": "keyword"
+                                },
+                                "value": {
+                                  "type": "keyword"
+                                }
+                              }
+                            },
+                            "columnFieldName": {
+                              "type": "keyword"
+                            },
+                            "metadata": {
+                              "properties": {
+                                "freeform": {
+                                  "type": "boolean"
+                                },
+                                "operator": {
+                                  "type": "keyword"
+                                },
+                                "tableColumnId": {
+                                  "properties": {
+                                    "219540": {
+                                      "type": "long"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "operator": {
+                              "type": "keyword"
+                            },
+                            "value": {
+                              "type": "keyword"
+                            }
+                          }
+                        },
+                        "columnFieldName": {
+                          "type": "keyword"
+                        },
+                        "metadata": {
+                          "properties": {
+                            "customValues": {
+                              "type": "keyword"
+                            },
+                            "freeform": {
+                              "type": "boolean"
+                            },
+                            "includeAuto": {
+                              "type": "long"
+                            },
+                            "operator": {
+                              "type": "keyword"
+                            },
+                            "tableColumnId": {
+                              "properties": {
+                                "215442": {
+                                  "type": "long"
+                                },
+                                "218439": {
+                                  "type": "long"
+                                },
+                                "218831": {
+                                  "type": "long"
+                                },
+                                "218833": {
+                                  "type": "long"
+                                },
+                                "219540": {
+                                  "type": "long"
+                                },
+                                "219964": {
+                                  "type": "long"
+                                },
+                                "1122626": {
+                                  "type": "long"
+                                },
+                                "2089012": {
+                                  "type": "long"
+                                }
+                              }
+                            },
+                            "unifiedVersion": {
+                              "type": "long"
+                            }
+                          }
+                        },
+                        "operator": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    },
+                    "columnFieldName": {
+                      "type": "keyword"
+                    },
+                    "metadata": {
+                      "properties": {
+                        "advanced": {
+                          "type": "boolean"
+                        },
+                        "customValues": {
+                          "type": "date"
+                        },
+                        "freeform": {
+                          "type": "boolean"
+                        },
+                        "operator": {
+                          "type": "keyword"
+                        },
+                        "tableColumnId": {
+                          "properties": {
+                            "218439": {
+                              "type": "long"
+                            },
+                            "218833": {
+                              "type": "long"
+                            },
+                            "219540": {
+                              "type": "long"
+                            },
+                            "2089012": {
+                              "type": "long"
+                            }
+                          }
+                        },
+                        "unifiedVersion": {
+                          "type": "long"
+                        }
+                      }
+                    },
+                    "operator": {
+                      "type": "keyword"
+                    },
+                    "value": {
+                      "type": "date"
+                    }
+                  }
+                }
+              }
+            },
+            "query": {
+              "properties": {
+                "2wwb-bhb2": {
+                  "properties": {
+                    "filterCondition": {
+                      "properties": {
+                        "children": {
+                          "properties": {
+                            "children": {
+                              "properties": {
+                                "children": {
+                                  "properties": {
+                                    "columnId": {
+                                      "type": "long"
+                                    },
+                                    "type": {
+                                      "type": "keyword"
+                                    },
+                                    "value": {
+                                      "type": "keyword"
+                                    }
+                                  }
+                                },
+                                "metadata": {
+                                  "properties": {
+                                    "freeform": {
+                                      "type": "boolean"
+                                    }
+                                  }
+                                },
+                                "type": {
+                                  "type": "keyword"
+                                },
+                                "value": {
+                                  "type": "keyword"
+                                }
+                              }
+                            },
+                            "metadata": {
+                              "properties": {
+                                "operator": {
+                                  "type": "keyword"
+                                },
+                                "tableColumnId": {
+                                  "properties": {
+                                    "215442": {
+                                      "type": "long"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "type": {
+                              "type": "keyword"
+                            },
+                            "value": {
+                              "type": "keyword"
+                            }
+                          }
+                        },
+                        "metadata": {
+                          "properties": {
+                            "unifiedVersion": {
+                              "type": "long"
+                            }
+                          }
+                        },
+                        "type": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    }
+                  }
+                },
+                "5f4s-t4jf": {
+                  "properties": {
+                    "filterCondition": {
+                      "properties": {
+                        "children": {
+                          "properties": {
+                            "children": {
+                              "properties": {
+                                "columnId": {
+                                  "type": "long"
+                                },
+                                "type": {
+                                  "type": "keyword"
+                                },
+                                "value": {
+                                  "type": "keyword"
+                                }
+                              }
+                            },
+                            "type": {
+                              "type": "keyword"
+                            },
+                            "value": {
+                              "type": "keyword"
+                            }
+                          }
+                        },
+                        "type": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    }
+                  }
+                },
+                "6249-gx6k": {
+                  "properties": {
+                    "filterCondition": {
+                      "properties": {
+                        "children": {
+                          "properties": {
+                            "children": {
+                              "properties": {
+                                "children": {
+                                  "properties": {
+                                    "columnId": {
+                                      "type": "long"
+                                    },
+                                    "type": {
+                                      "type": "keyword"
+                                    },
+                                    "value": {
+                                      "type": "keyword"
+                                    }
+                                  }
+                                },
+                                "metadata": {
+                                  "properties": {
+                                    "freeform": {
+                                      "type": "boolean"
+                                    }
+                                  }
+                                },
+                                "type": {
+                                  "type": "keyword"
+                                },
+                                "value": {
+                                  "type": "keyword"
+                                }
+                              }
+                            },
+                            "metadata": {
+                              "properties": {
+                                "operator": {
+                                  "type": "keyword"
+                                },
+                                "tableColumnId": {
+                                  "type": "long"
+                                }
+                              }
+                            },
+                            "type": {
+                              "type": "keyword"
+                            },
+                            "value": {
+                              "type": "keyword"
+                            }
+                          }
+                        },
+                        "metadata": {
+                          "properties": {
+                            "advanced": {
+                              "type": "boolean"
+                            },
+                            "unifiedVersion": {
+                              "type": "long"
+                            }
+                          }
+                        },
+                        "type": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    }
+                  }
+                },
+                "6s38-938c": {
+                  "properties": {
+                    "filterCondition": {
+                      "properties": {
+                        "children": {
+                          "properties": {
+                            "children": {
+                              "properties": {
+                                "children": {
+                                  "properties": {
+                                    "columnId": {
+                                      "type": "long"
+                                    },
+                                    "type": {
+                                      "type": "keyword"
+                                    },
+                                    "value": {
+                                      "type": "keyword"
+                                    }
+                                  }
+                                },
+                                "metadata": {
+                                  "properties": {
+                                    "freeform": {
+                                      "type": "boolean"
+                                    }
+                                  }
+                                },
+                                "type": {
+                                  "type": "keyword"
+                                },
+                                "value": {
+                                  "type": "keyword"
+                                }
+                              }
+                            },
+                            "metadata": {
+                              "properties": {
+                                "operator": {
+                                  "type": "keyword"
+                                },
+                                "tableColumnId": {
+                                  "properties": {
+                                    "219540": {
+                                      "type": "long"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "type": {
+                              "type": "keyword"
+                            },
+                            "value": {
+                              "type": "keyword"
+                            }
+                          }
+                        },
+                        "metadata": {
+                          "properties": {
+                            "unifiedVersion": {
+                              "type": "long"
+                            }
+                          }
+                        },
+                        "type": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    }
+                  }
+                },
+                "8uz3-wyny": {
+                  "properties": {
+                    "filterCondition": {
+                      "properties": {
+                        "children": {
+                          "properties": {
+                            "children": {
+                              "properties": {
+                                "children": {
+                                  "properties": {
+                                    "columnId": {
+                                      "type": "long"
+                                    },
+                                    "type": {
+                                      "type": "keyword"
+                                    },
+                                    "value": {
+                                      "type": "keyword"
+                                    }
+                                  }
+                                },
+                                "metadata": {
+                                  "properties": {
+                                    "freeform": {
+                                      "type": "boolean"
+                                    }
+                                  }
+                                },
+                                "type": {
+                                  "type": "keyword"
+                                },
+                                "value": {
+                                  "type": "keyword"
+                                }
+                              }
+                            },
+                            "metadata": {
+                              "properties": {
+                                "operator": {
+                                  "type": "keyword"
+                                },
+                                "tableColumnId": {
+                                  "type": "long"
+                                }
+                              }
+                            },
+                            "type": {
+                              "type": "keyword"
+                            },
+                            "value": {
+                              "type": "keyword"
+                            }
+                          }
+                        },
+                        "metadata": {
+                          "properties": {
+                            "advanced": {
+                              "type": "boolean"
+                            },
+                            "unifiedVersion": {
+                              "type": "long"
+                            }
+                          }
+                        },
+                        "type": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    }
+                  }
+                },
+                "a98r-tztc": {
+                  "properties": {
+                    "filterCondition": {
+                      "properties": {
+                        "children": {
+                          "properties": {
+                            "children": {
+                              "properties": {
+                                "columnId": {
+                                  "type": "long"
+                                },
+                                "type": {
+                                  "type": "keyword"
+                                },
+                                "value": {
+                                  "type": "keyword"
+                                }
+                              }
+                            },
+                            "type": {
+                              "type": "keyword"
+                            },
+                            "value": {
+                              "type": "keyword"
+                            }
+                          }
+                        },
+                        "type": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    }
+                  }
+                },
+                "dxfe-di3a": {
+                  "properties": {
+                    "filterCondition": {
+                      "properties": {
+                        "children": {
+                          "properties": {
+                            "children": {
+                              "properties": {
+                                "columnId": {
+                                  "type": "long"
+                                },
+                                "type": {
+                                  "type": "keyword"
+                                },
+                                "value": {
+                                  "type": "keyword"
+                                }
+                              }
+                            },
+                            "type": {
+                              "type": "keyword"
+                            },
+                            "value": {
+                              "type": "keyword"
+                            }
+                          }
+                        },
+                        "type": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    }
+                  }
+                },
+                "gwke-htgm": {
+                  "properties": {
+                    "filterCondition": {
+                      "properties": {
+                        "children": {
+                          "properties": {
+                            "children": {
+                              "properties": {
+                                "children": {
+                                  "properties": {
+                                    "columnId": {
+                                      "type": "long"
+                                    },
+                                    "type": {
+                                      "type": "keyword"
+                                    },
+                                    "value": {
+                                      "type": "keyword"
+                                    }
+                                  }
+                                },
+                                "metadata": {
+                                  "properties": {
+                                    "freeform": {
+                                      "type": "boolean"
+                                    }
+                                  }
+                                },
+                                "type": {
+                                  "type": "keyword"
+                                },
+                                "value": {
+                                  "type": "keyword"
+                                }
+                              }
+                            },
+                            "metadata": {
+                              "properties": {
+                                "operator": {
+                                  "type": "keyword"
+                                },
+                                "tableColumnId": {
+                                  "properties": {
+                                    "215442": {
+                                      "type": "long"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "type": {
+                              "type": "keyword"
+                            },
+                            "value": {
+                              "type": "keyword"
+                            }
+                          }
+                        },
+                        "metadata": {
+                          "properties": {
+                            "unifiedVersion": {
+                              "type": "long"
+                            }
+                          }
+                        },
+                        "type": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    }
+                  }
+                },
+                "itwm-6b6h": {
+                  "properties": {
+                    "filterCondition": {
+                      "properties": {
+                        "children": {
+                          "properties": {
+                            "children": {
+                              "properties": {
+                                "children": {
+                                  "properties": {
+                                    "columnId": {
+                                      "type": "long"
+                                    },
+                                    "type": {
+                                      "type": "keyword"
+                                    },
+                                    "value": {
+                                      "type": "keyword"
+                                    }
+                                  }
+                                },
+                                "metadata": {
+                                  "properties": {
+                                    "freeform": {
+                                      "type": "boolean"
+                                    }
+                                  }
+                                },
+                                "type": {
+                                  "type": "keyword"
+                                },
+                                "value": {
+                                  "type": "keyword"
+                                }
+                              }
+                            },
+                            "metadata": {
+                              "properties": {
+                                "operator": {
+                                  "type": "keyword"
+                                },
+                                "tableColumnId": {
+                                  "type": "long"
+                                }
+                              }
+                            },
+                            "type": {
+                              "type": "keyword"
+                            },
+                            "value": {
+                              "type": "keyword"
+                            }
+                          }
+                        },
+                        "metadata": {
+                          "properties": {
+                            "advanced": {
+                              "type": "boolean"
+                            },
+                            "unifiedVersion": {
+                              "type": "long"
+                            }
+                          }
+                        },
+                        "type": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    }
+                  }
+                },
+                "jm38-i3cc": {
+                  "properties": {
+                    "filterCondition": {
+                      "properties": {
+                        "children": {
+                          "properties": {
+                            "children": {
+                              "properties": {
+                                "columnId": {
+                                  "type": "long"
+                                },
+                                "type": {
+                                  "type": "keyword"
+                                },
+                                "value": {
+                                  "type": "keyword"
+                                }
+                              }
+                            },
+                            "type": {
+                              "type": "keyword"
+                            },
+                            "value": {
+                              "type": "keyword"
+                            }
+                          }
+                        },
+                        "type": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    }
+                  }
+                },
+                "pcj5-r3a4": {
+                  "properties": {
+                    "filterCondition": {
+                      "properties": {
+                        "children": {
+                          "properties": {
+                            "children": {
+                              "properties": {
+                                "children": {
+                                  "properties": {
+                                    "columnId": {
+                                      "type": "long"
+                                    },
+                                    "type": {
+                                      "type": "keyword"
+                                    },
+                                    "value": {
+                                      "type": "keyword"
+                                    }
+                                  }
+                                },
+                                "metadata": {
+                                  "properties": {
+                                    "freeform": {
+                                      "type": "boolean"
+                                    }
+                                  }
+                                },
+                                "type": {
+                                  "type": "keyword"
+                                },
+                                "value": {
+                                  "type": "keyword"
+                                }
+                              }
+                            },
+                            "metadata": {
+                              "properties": {
+                                "operator": {
+                                  "type": "keyword"
+                                },
+                                "tableColumnId": {
+                                  "properties": {
+                                    "218439": {
+                                      "type": "long"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "type": {
+                              "type": "keyword"
+                            },
+                            "value": {
+                              "type": "keyword"
+                            }
+                          }
+                        },
+                        "metadata": {
+                          "properties": {
+                            "unifiedVersion": {
+                              "type": "long"
+                            }
+                          }
+                        },
+                        "type": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    }
+                  }
+                },
+                "qdme-t5sg": {
+                  "properties": {
+                    "filterCondition": {
+                      "properties": {
+                        "children": {
+                          "properties": {
+                            "children": {
+                              "properties": {
+                                "children": {
+                                  "properties": {
+                                    "columnId": {
+                                      "type": "long"
+                                    },
+                                    "type": {
+                                      "type": "keyword"
+                                    },
+                                    "value": {
+                                      "type": "keyword"
+                                    }
+                                  }
+                                },
+                                "metadata": {
+                                  "properties": {
+                                    "freeform": {
+                                      "type": "boolean"
+                                    }
+                                  }
+                                },
+                                "type": {
+                                  "type": "keyword"
+                                },
+                                "value": {
+                                  "type": "keyword"
+                                }
+                              }
+                            },
+                            "metadata": {
+                              "properties": {
+                                "operator": {
+                                  "type": "keyword"
+                                },
+                                "tableColumnId": {
+                                  "properties": {
+                                    "218833": {
+                                      "type": "long"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "type": {
+                              "type": "keyword"
+                            },
+                            "value": {
+                              "type": "keyword"
+                            }
+                          }
+                        },
+                        "metadata": {
+                          "properties": {
+                            "unifiedVersion": {
+                              "type": "long"
+                            }
+                          }
+                        },
+                        "type": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    }
+                  }
+                },
+                "rbqf-mmup": {
+                  "properties": {
+                    "filterCondition": {
+                      "properties": {
+                        "children": {
+                          "properties": {
+                            "children": {
+                              "properties": {
+                                "columnId": {
+                                  "type": "long"
+                                },
+                                "type": {
+                                  "type": "keyword"
+                                },
+                                "value": {
+                                  "type": "keyword"
+                                }
+                              }
+                            },
+                            "type": {
+                              "type": "keyword"
+                            },
+                            "value": {
+                              "type": "keyword"
+                            }
+                          }
+                        },
+                        "type": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    }
+                  }
+                },
+                "ypeg-fz9r": {
+                  "properties": {
+                    "filterCondition": {
+                      "properties": {
+                        "children": {
+                          "properties": {
+                            "children": {
+                              "properties": {
+                                "columnId": {
+                                  "type": "long"
+                                },
+                                "type": {
+                                  "type": "keyword"
+                                },
+                                "value": {
+                                  "type": "keyword"
+                                }
+                              }
+                            },
+                            "type": {
+                              "type": "keyword"
+                            },
+                            "value": {
+                              "type": "keyword"
+                            }
+                          }
+                        },
+                        "type": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    }
+                  }
+                },
+                "zkg6-227m": {
+                  "properties": {
+                    "filterCondition": {
+                      "properties": {
+                        "children": {
+                          "properties": {
+                            "children": {
+                              "properties": {
+                                "children": {
+                                  "properties": {
+                                    "columnId": {
+                                      "type": "long"
+                                    },
+                                    "type": {
+                                      "type": "keyword"
+                                    },
+                                    "value": {
+                                      "type": "keyword"
+                                    }
+                                  }
+                                },
+                                "metadata": {
+                                  "properties": {
+                                    "freeform": {
+                                      "type": "boolean"
+                                    }
+                                  }
+                                },
+                                "type": {
+                                  "type": "keyword"
+                                },
+                                "value": {
+                                  "type": "keyword"
+                                }
+                              }
+                            },
+                            "metadata": {
+                              "properties": {
+                                "customValues": {
+                                  "type": "date"
+                                },
+                                "operator": {
+                                  "type": "keyword"
+                                },
+                                "tableColumnId": {
+                                  "properties": {
+                                    "218439": {
+                                      "type": "long"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "type": {
+                              "type": "keyword"
+                            },
+                            "value": {
+                              "type": "keyword"
+                            }
+                          }
+                        },
+                        "metadata": {
+                          "properties": {
+                            "unifiedVersion": {
+                              "type": "long"
+                            }
+                          }
+                        },
+                        "type": {
+                          "type": "keyword"
+                        },
+                        "value": {
+                          "type": "keyword"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "renderTypeConfig": {
+              "properties": {
+                "active": {
+                  "properties": {
+                    "fatrow": {
+                      "properties": {
+                        "id": {
+                          "type": "keyword"
+                        }
+                      }
+                    },
+                    "map": {
+                      "properties": {
+                        "id": {
+                          "type": "keyword"
+                        }
+                      }
+                    },
+                    "page": {
+                      "properties": {
+                        "id": {
+                          "type": "keyword"
+                        }
+                      }
+                    },
+                    "table": {
+                      "properties": {
+                        "id": {
+                          "type": "keyword"
+                        }
+                      }
+                    }
+                  }
+                },
+                "visible": {
+                  "properties": {
+                    "blob": {
+                      "type": "boolean"
+                    },
+                    "calendar": {
+                      "type": "boolean"
+                    },
+                    "chart": {
+                      "type": "boolean"
+                    },
+                    "fatrow": {
+                      "type": "boolean"
+                    },
+                    "form": {
+                      "type": "boolean"
+                    },
+                    "href": {
+                      "type": "boolean"
+                    },
+                    "map": {
+                      "type": "boolean"
+                    },
+                    "page": {
+                      "type": "boolean"
+                    },
+                    "table": {
+                      "type": "boolean"
+                    }
+                  }
+                }
+              }
+            },
+            "rowIdentifier": {
+              "type": "long"
+            },
+            "rowLabel": {
+              "type": "keyword"
+            },
+            "sidebar": {
+              "properties": {
+                "width": {
+                  "type": "long"
+                }
+              }
+            },
+            "thumbnail": {
+              "properties": {
+                "page": {
+                  "properties": {
+                    "created": {
+                      "type": "boolean"
+                    },
+                    "filename": {
+                      "type": "keyword"
+                    },
+                    "selection": {
+                      "properties": {
+                        "height": {
+                          "type": "long"
+                        },
+                        "width": {
+                          "type": "long"
+                        },
+                        "x1": {
+                          "type": "long"
+                        },
+                        "x2": {
+                          "type": "long"
+                        },
+                        "y1": {
+                          "type": "long"
+                        },
+                        "y2": {
+                          "type": "long"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "v1_archived_properties": {
+              "properties": {
+                "accessPoints": {
+                  "properties": {
+                    "new_view": {
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "blist_id": {
+                  "type": "keyword"
+                },
+                "renderTypeConfig": {
+                  "properties": {
+                    "visible": {
+                      "properties": {
+                        "href": {
+                          "type": "boolean"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "moderationStatus": {
+          "type": "boolean"
+        },
+        "modifyingViewUid": {
+          "type": "keyword"
+        },
+        "name": {
+          "type": "keyword"
+        },
+        "newBackend": {
+          "type": "boolean"
+        },
+        "northWest": {
+          "properties": {
+            "lat": {
+              "type": "half_float"
+            },
+            "long": {
+              "type": "half_float"
+            }
+          }
+        },
+        "numberOfComments": {
+          "type": "long"
+        },
+        "oid": {
+          "type": "long"
+        },
+        "owner": {
+          "properties": {
+            "displayName": {
+              "type": "keyword"
+            },
+            "flags": {
+              "type": "keyword"
+            },
+            "id": {
+              "type": "keyword"
+            },
+            "lastNotificationSeenAt": {
+              "type": "long"
+            },
+            "profileImageUrlLarge": {
+              "type": "keyword"
+            },
+            "profileImageUrlMedium": {
+              "type": "keyword"
+            },
+            "profileImageUrlSmall": {
+              "type": "keyword"
+            },
+            "roleName": {
+              "type": "keyword"
+            },
+            "screenName": {
+              "type": "keyword"
+            }
+          }
+        },
+        "previewImageId": {
+          "type": "keyword"
+        },
+        "provenance": {
+          "type": "keyword"
+        },
+        "publicationAppendEnabled": {
+          "type": "boolean"
+        },
+        "publicationDate": {
+          "type": "date",
+          "format": "epoch_second"
+        },
+        "publicationGroup": {
+          "type": "long"
+        },
+        "publicationStage": {
+          "type": "keyword"
+        },
+        "ratings": {
+          "properties": {
+            "rating": {
+              "type": "long"
+            }
+          }
+        },
+        "resourceName": {
+          "type": "keyword"
+        },
+        "rights": {
+          "type": "keyword"
+        },
+        "rowClass": {
+          "type": "keyword"
+        },
+        "rowIdentifierColumnId": {
+          "type": "long"
+        },
+        "rowsUpdatedAt": {
+          "type": "date",
+          "format": "epoch_second"
+        },
+        "rowsUpdatedBy": {
+          "type": "keyword"
+        },
+        "searchString": {
+          "type": "keyword"
+        },
+        "southEast": {
+          "properties": {
+            "lat": {
+              "type": "half_float"
+            },
+            "long": {
+              "type": "half_float"
+            }
+          }
+        },
+        "tableAuthor": {
+          "properties": {
+            "displayName": {
+              "type": "keyword"
+            },
+            "id": {
+              "type": "keyword"
+            },
+            "lastNotificationSeenAt": {
+              "type": "long"
+            },
+            "profileImageUrlLarge": {
+              "type": "keyword"
+            },
+            "profileImageUrlMedium": {
+              "type": "keyword"
+            },
+            "profileImageUrlSmall": {
+              "type": "keyword"
+            },
+            "rights": {
+              "type": "keyword"
+            },
+            "roleName": {
+              "type": "keyword"
+            },
+            "screenName": {
+              "type": "keyword"
+            }
+          }
+        },
+        "tableId": {
+          "type": "long"
+        },
+        "tags": {
+          "type": "keyword"
+        },
+        "totalTimesRated": {
+          "type": "long"
+        },
+        "viewCount": {
+          "type": "long"
+        },
+        "viewLastModified": {
+          "type": "date",
+          "format": "epoch_second"
+        },
+        "viewType": {
+          "type": "keyword"
+        }
+      }
+    }
+  }
+}

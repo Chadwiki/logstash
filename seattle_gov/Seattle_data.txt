@@ -1,0 +1,143 @@
+
+# 064746ntw14k0301639
+
+# Catagory: Public Safety
+# URL: https://data.seattle.gov/browse?category=Public+Safety
+
+Use of Force
+https://data.seattle.gov/api/views/ppi5-g2bj/rows.json?accessType=DOWNLOAD
+
+  #"id" : "3k2p-39jp",
+  # "name" : "Seattle Police Department 911 Incident Response"
+  # "logstash": seattle_911_incident.conf
+  # https://data.seattle.gov/api/views/3k2p-39jp/rows.csv?accessType=DOWNLOAD
+  # File: Seattle_Police_Department_911_Incident_Response.csv
+  # as of 2017.07.27  Rows: 125K
+  # This dataset is all the Police responses to 9-1-1 calls within the city. Police response data shows all officers dispatched. To protect the security of a scene, the safety of officers and the public, and sensitive ongoing investigation, these events are added to the data.seattle.gov only after the incident is considered safe to close out. Data is refreshed on a 4 hour interval.
+  # Fields
+  cad_cdw_id text CAD CDW ID
+  cad_event_number text CAD Event Number
+  general_offense_number text General Offense Number
+  event_clearance_code text Event Clearance Code
+  event_clearance_description text Event Clearance Description
+  event_clearance_subgroup text Event Clearance SubGroup
+  vent_clearance_group text Event Clearance Group
+  event_clearance_date floating_timestamp Event Clearance Date
+  hundred_block_location text Hundred Block Location
+  district_sector text District/Sector
+  zone_beat text Zone/Beat
+  census_tract text Census Tract
+  longitude number Longitude
+  latitude number Latitude
+  incident_location point Incident Location
+  initial_type_description text Initial Type Description
+  initial_type_subgroup text Initial Type Subgroup
+  initial_type_group text Initial Type Group
+  at_scene_time floating_timestamp At Scene Time
+  incident_location_state text Incident Location (state)
+  incident_location_address text Incident Location (address)
+  incident_location_zip text Incident Location (zip)
+  incident_location_city text Incident Location (city)
+
+  #"id" : "kzjm-xkqj"
+  # "name" : "Seattle Real Time Fire 911 Calls"
+  # "logstash": seattle_911_fire.conf
+  # https://data.seattle.gov/api/views/kzjm-xkqj/rows.csv?accessType=DOWNLOAD
+  # File: Seattle_Real_Time_Fire_911_Calls.csv
+  # as of 2017.07.27  Rows: 633K 
+  # Provides Seattle Fire Department 911 dispatches. Updated every 5 minutes.
+  # Fields
+  address text Address
+  type text Type
+  datetime floating_timestamp Datetime
+  latitude number Latitude
+  longitude number Longitude
+  report_location point Report Location
+  incident_number text Incident Number
+  report_location_zip text Report Location (zip)
+  report_location_address text Report Location (address)
+  report_location_state text Report Location (state)
+  report_location_city text Report Location (city)
+  
+  # "id" : "hax4-439n",
+  # "name" : "Seattle Police 911 Calls",
+  # "logstash": seattle_911_police.conf
+  # https://data.seattle.gov/api/views/hax4-439n/rows.csv?accessType=DOWNLOAD
+  # This dataset is all the Police responses to 9-1-1 calls within the city. Police response data shows all officers dispatched. To protect the security of a scene, the safety of officers and the public, and sensitive ongoing investigation, these events are added to the data.seattle.gov only after the incident is considered safe to close out. Data is refreshed on a 4 hour interval.
+
+
+# "id" : "7ais-f98f"
+# "name" : "Seattle Police Department Police Report Incident"
+# "logstash": <NEEDS Created>
+# https://dev.socrata.com/foundry/data.seattle.gov/7ais-f98f
+# https://data.seattle.gov/api/views/7ais-f98f/rows.csv?accessType=DOWNLOAD
+# File: Seattle_Police_Department_Police_Report_Incident.csv
+# as of 2017.07.27  Rows: 684K
+# These incidents are based on initial police reports taken by officers when responding to incidents around the city. The information enters our Records Management System (RMS) and is then transmitted out to data.seattle.gov. This information is published within 6 to 12 hours after the report is filed into the system.
+# Fields
+ rms_cdw_id text RMS CDW ID
+ general_offense_number text General Offense Number
+ offense_code text Offense Code
+ offense_code_extension text Offense Code Extension
+ offense_type text Offense Type
+ summary_offense_code text Summary Offense Code
+ summarized_offense_description text Summarized Offense Description
+ date_reported floating_timestamp Date Reported
+ occurred_date_or_date_range_start floating_timestamp Occurred Date or Date Range Start
+ occurred_date_range_end floating_timestamp Occurred Date Range End
+ hundred_block_location text Hundred Block Location
+ district_sector text District/Sector
+ zone_beat text Zone/Beat
+ census_tract_2000 text Census Tract 2000
+ longitude number Longitude
+ latitude number Latitude
+ location point Location
+ month number Month
+ year number Year
+ location_city text Location (city)
+ location_address text Location (address)
+ location_zip text Location (zip)
+ location_state text Location (state)
+
+# "id" : "m2gk-mysw",  (List of codes)
+# "name" : "Seattle Police Department Police Report Offense",
+# "logstash":  <NEEDS Created>
+# https://data.seattle.gov/api/views/m2gk-mysw/rows.csv?accessType=DOWNLOAD
+# File: Seattle_Police_Department_Police_Report_Incident.csv
+# as of 2017.07.27  Rows: 982K
+# These offenses correspond to the Police Report Incidents
+# http://data.seattle.gov/dataset/Seattle-Police-Department-Police-Report-Incident/7ais-f98f
+# Fields
+ cdw_offense_id text CDW Offense ID 
+ cdw_incident_id text CDW Incident ID 
+ offense_code text Offense Code
+ offense_code_ext text Offense Code Extension
+ crime_type text Crime Type Plain
+ summary_offense_code text Summary Offense Code Plain
+ summary_crime_type text Summary Crime Type
+
+
+
+
+### Other possible sources:
+  "id" : "2ga7-6z4s", (not good)
+  "name" : "simple police 911",
+
+  "id" : "mzrk-e8qt", (no data)
+  "name" : "Seattle Police Department 911 Incident Response",
+
+  "id" : "z2uh-bh57",
+  "name" : "Seattle Real Time Fire 911 Calls",
+
+  "id" : "v7yw-9wph",
+  "name" : "simple 911",
+
+  "id" : "upug-ckch",
+  "name" : "Seattle Real Time Fire 911 Calls",
+
+"id" : "nnxn-434b" (no data, shape files only) ** these changed over the years. 
+# https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Beats/nnxn-434b
+# https://data.seattle.gov/api/views/nnxn-434b/rows.csv?accessType=DOWNLOAD
+# File: Seattle_Police_Department_Beats.csv
+# as of 2017.07.27  Rows: 
+# Spatial data files of City of Seatle Police precincts and beats. Coordinate system is WGS84
