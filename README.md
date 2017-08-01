@@ -8,3 +8,4 @@
 
 1) Add conf listing/index
 2) Resolve FIXes listed in Conf files
+3) Add indvidual folder readme files
