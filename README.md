@@ -1,8 +1,10 @@
 # logstash
 1. Download, Logstash 5.5.1
           https://www.elastic.co/downloads/logstash
-2. Edit/Add auto create index to ES Config (elasticsearch.yml) => 
-          action.auto_create_index: logstash*
-3. Update the logstash conf for your IIS log path and ES instance
-4. Run logstash => logstash agent -f logstash_iis_all_fields.conf OR configure to run as SERVICE
+2. Update the logstash conf for your specific data paths and ES instance
+3. Run logstash => logstash -f <logstash_conf_name>.conf OR configure to run as SERVICE
 
+## To Do:
+
+1) Add conf listing/index
+2) Resolve FIXes listed in Conf files
