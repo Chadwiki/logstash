@@ -5,6 +5,9 @@
 3. Import templates 
 3. Run logstash => logstash -f <logstash_conf_name>.conf
 
+## Information on data source fields, etc
+[Seattle_data.txt](https://github.com/Chadwiki/logstash/blob/master/seattle_gov/Seattle_data.txt)
+
 ## To Do:
 
 1) Add conf listing/index
