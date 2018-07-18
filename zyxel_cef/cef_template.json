@@ -237,7 +237,7 @@
               "type": "integer"
             },
             "UpTime": {
-              "type": "integer"
+              "type": "keyword"
             },
             "cpu": {
               "type": "integer"
@@ -264,7 +264,7 @@
               "type": "keyword"
             },
             "uptime": {
-              "type": "integer"
+              "type": "keyword"
             }
           }
         }
