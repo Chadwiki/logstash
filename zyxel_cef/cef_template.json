@@ -243,7 +243,7 @@
               "type": "integer"
             },
             "firmwareversion": {
-              "type": "integer"
+              "type": "keyword"
             },
             "hostname": {
               "type": "keyword"
