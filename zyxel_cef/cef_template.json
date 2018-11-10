@@ -1,17 +1,21 @@
 {
-  "order": 100,
+  "order": 101,
   "index_patterns": [
     "cef-*"
   ],
   "settings": {
     "index": {
+      "refresh_interval": "3s",
       "number_of_shards": "1",
-      "number_of_replicas": "1"
+      "number_of_replicas": "0"
     }
   },
   "mappings": {
     "_default_": {
       "dynamic": true,
+      "_meta": {
+        "version": "1.0.0"
+      },
       "dynamic_templates": [
         {
           "string_fields": {
@@ -50,17 +54,47 @@
           "dynamic": false,
           "type": "object",
           "properties": {
-            "city_name": {
+            "country_code3": {
+              "type": "keyword"
+            },
+            "country_code2": {
+              "type": "keyword"
+            },
+            "ip": {
+              "type": "ip"
+            },
+            "dma_code": {
+              "type": "keyword"
+            },
+            "latitude": {
+              "type": "float"
+            },
+            "continent_code": {
               "type": "keyword"
             },
             "country_name": {
               "type": "keyword"
             },
-            "location": {
-              "type": "geo_point"
+            "region_code": {
+              "type": "keyword"
+            },
+            "timezone": {
+              "type": "keyword"
+            },
+            "city_name": {
+              "type": "keyword"
             },
             "region_name": {
               "type": "keyword"
+            },
+            "longitude": {
+              "type": "float"
+            },
+            "postal_code": {
+              "type": "keyword"
+            },
+            "location": {
+              "type": "geo_point"
             }
           }
         },
@@ -68,17 +102,47 @@
           "dynamic": false,
           "type": "object",
           "properties": {
-            "city_name": {
+            "country_code3": {
+              "type": "keyword"
+            },
+            "country_code2": {
+              "type": "keyword"
+            },
+            "ip": {
+              "type": "ip"
+            },
+            "dma_code": {
+              "type": "keyword"
+            },
+            "latitude": {
+              "type": "float"
+            },
+            "continent_code": {
               "type": "keyword"
             },
             "country_name": {
               "type": "keyword"
             },
-            "location": {
-              "type": "geo_point"
+            "region_code": {
+              "type": "keyword"
+            },
+            "timezone": {
+              "type": "keyword"
+            },
+            "city_name": {
+              "type": "keyword"
             },
             "region_name": {
               "type": "keyword"
+            },
+            "longitude": {
+              "type": "float"
+            },
+            "postal_code": {
+              "type": "keyword"
+            },
+            "location": {
+              "type": "geo_point"
             }
           }
         },
@@ -271,5 +335,7 @@
       }
     }
   },
-  "aliases": {}
+  "aliases": {
+    "cef": {}
+  }
 }
